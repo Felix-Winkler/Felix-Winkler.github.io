@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Felix Winkler – Engineering Projects</title>
+<meta name="description" content="Engineering projects by Felix Winkler, mechanical engineering student at FH Technikum Wien.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --fg: #1c1d1f;
+    --muted: #6b6d70;
+    --line: #d9d7d0;
+    --accent: #d2541c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141516;
+      --fg: #ecebe7;
+      --muted: #9a9b9d;
+      --line: #2c2e30;
+      --accent: #ee7a43;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    line-height: 1.55;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-attachment: fixed;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 72px 20px 96px;
+  }
+  .sheet {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    padding: 40px 36px;
+  }
+  .label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-size: clamp(34px, 7vw, 52px);
+    line-height: 1.05;
+    margin: 0 0 14px;
+    font-weight: 600;
+    letter-spacing: -.02em;
+  }
+  .tagline {
+    font-size: 19px;
+    color: var(--muted);
+    margin: 0 0 40px;
+    max-width: 34em;
+  }
+  h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin: 36px 0 14px;
+  }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { padding: 7px 0; }
+  li strong { font-weight: 600; }
+  .edu li { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .edu span { color: var(--muted); font-size: 15px; }
+  .soon {
+    margin-top: 40px;
+    padding: 18px 20px;
+    border: 1px dashed var(--accent);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  .soon b { color: var(--accent); font-weight: 500; }
+  @media (max-width: 520px) {
+    main { padding-top: 32px; }
+    .sheet { padding: 28px 20px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="sheet">
+    <p class="label">Portfolio</p>
+    <h1>Felix Winkler</h1>
+    <p class="tagline">Mechanical engineering student who designs and builds machines, from gearboxes to robots.</p>
+
+    <h2>Education</h2>
+    <ul class="edu">
+      <li><strong>FH Technikum Wien</strong><span>Bachelor's in Mechanical Engineering · 3rd semester (current)</span></li>
+      <li><strong>HTL Mödling</strong><span>Higher Technical College · graduated</span></li>
+    </ul>
+
+    <h2>Technical interests</h2>
+    <ul>
+      <li><strong>Manufacturing:</strong> conventional and CNC machining (turning, milling), additive manufacturing (3D printing)</li>
+      <li><strong>Machine design:</strong> design and construction of custom machines, from concept to commissioning</li>
+      <li><strong>Robotics:</strong> actuators, gearbox design, kinematics and inverse kinematics</li>
+      <li><strong>Electronics and control:</strong> motor drivers, control systems, user interfaces and web-based control</li>
+      <li><strong>Embedded systems:</strong> microcontroller development (Arduino, ESP32) and peripheral integration</li>
+    </ul>
+
+    <h2>Other interests</h2>
+    <ul>
+      <li>Volleyball</li>
+      <li>Cycling</li>
+    </ul>
+
+    <div class="soon"><b>// Projects</b> — detailed project pages coming soon.</div>
+  </div>
+</main>
+</body>
+</html>
